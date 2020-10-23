@@ -1,0 +1,39 @@
+linters:
+  enable:
+    # default
+    - deadcode
+    - errcheck
+    - gosimple
+    - govet
+    - ineffassign
+    - staticcheck
+    - structcheck
+    - typecheck
+    - unused
+    - varcheck
+    # added
+    - depguard
+    # dupl
+    - gochecknoinits
+    - goconst
+    - gocritic
+    - gocyclo
+    - gofmt
+    - goimports
+    - interfacer
+    - misspell
+    - nakedret
+    - prealloc
+    - scopelint
+    - stylecheck
+    - unconvert
+    - unparam
+    - gosec
+    - golint
+  disable:
+    - gochecknoglobals # Using globals for prometheus counters (global shared context)
+    - lll # hard to fulfill
+    - maligned # not worth it atm.
+
+  run:
+    modules-download-mode: vendor
