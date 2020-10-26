@@ -14,7 +14,7 @@ All callers of this function must be explicitly provided permissions. For exampl
 ## Invoke function
 Callers of the function must provide a valid JWT token to authenticate themselves. For example in `my-project`:
 
-`"curl 'https://us-central1-my-project.cloudfunctions.net/escalate-permissions' --header 'Authorization: bearer $(gcloud auth print-identity-token)' -I -s"`
+`curl 'https://us-central1-my-project.cloudfunctions.net/escalate-permissions' --header 'Authorization: bearer $(gcloud auth print-identity-token)' -I -s`
 
 ## Contributions
 
